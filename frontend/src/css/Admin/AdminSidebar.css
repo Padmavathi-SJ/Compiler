@@ -1,0 +1,193 @@
+/* AdminSidebar.css */
+
+/* Sidebar Container */
+.sidebar {
+    width: 14%;
+    min-width: 200px;
+    height: 100vh;
+    background-color: #fff; /* Clean white background */
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+}
+  
+/* Sidebar Header */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+  
+/* Sidebar Logo */
+.sidebar-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+  
+/* Sidebar Title */
+.sidebar-title {
+    font-family: "Faculty Glyphic", sans-serif;
+    color: #34495e;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+  
+/* Navigation List */
+.sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center nav items horizontally */
+}
+  
+/* Navigation Items */
+.sidebar-nav li {
+    margin-bottom: 10px; /* Spacing between nav items */
+}
+  
+/* Navigation Links */
+.sidebar-nav li a {
+    font-family: "Faculty Glyphic", sans-serif;
+    color: #34495e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.2rem;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+    width: 190px; /* Fixed width for consistency */
+    justify-content: center; /* Center icon and text within the link */
+    margin: 0 auto; /* Center the link within its parent */
+    box-sizing: border-box; /* Include border in width calculations */
+}
+  
+/* Hover and Active States */
+.sidebar-nav li a:hover{
+    background-color: #e6ebf0; /* Light background on hover and active */
+    border: 0.2px solid #34495e; /* Add border on hover and active */
+}
+.sidebar-nav li a:active {
+    background-color: #e6ebf0; /* Same background on active */
+    border-color: transparent; /* No border during active state */
+}
+
+  
+/* Navigation Icons */
+.nav-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: black;
+}
+  
+/* Navigation Text */
+.nav-text {
+    flex-grow: 1;
+    font-size: 0.97rem;
+    color: #2d3748;
+    margin-left: 10px;
+}
+  
+/* Logout Button Styling */
+.logout-button {
+    margin: 20px auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    background-color: #e6ebf0;
+    color: #34495e;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.2px solid #34495e; 
+    transition: background-color 0.3s;
+    width: 160px; /* Match nav links width */
+    box-sizing: border-box; /* Include border in width calculations */
+}
+  
+.logout-button:hover {
+    background-color: #e6ebf0; /* Maintain hover effect consistency */
+}
+  
+/* Logout Icon */
+.logout-icon {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Sidebar's min-width */
+    }
+
+    .main-content {
+        margin-left: 200px; /* Adjusted to sidebar's min-width */
+    }
+    
+    .sidebar-nav li a,
+    .logout-button {
+        width: 140px; /* Slightly narrower on smaller screens */
+    }
+}
+  
+@media (max-width: 500px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .sidebar-header {
+        justify-content: space-between;
+        width: 100%;
+        border-bottom: none;
+        margin-bottom: 10px;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sidebar-nav li {
+        margin: 0 5px;
+    }
+
+    .sidebar-nav li a {
+        width: 100px; /* Further reduce width for mobile */
+        justify-content: center;
+    }
+
+    .logout-button {
+        width: 100px; /* Match nav links on mobile */
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}

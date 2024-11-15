@@ -1,0 +1,80 @@
+.instructions-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    top: -20px; /* Move upwards by 20px */
+    margin-bottom: 60px;
+  }
+  
+  .instructions-page h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Add margin to create space below the heading */
+  }
+  
+  .instruction-container {
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adding the box-shadow */
+    text-align: center;
+    margin: 20px 0; /* Add margin around the container */
+  }
+  
+  .instruction-container p {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  .instruction-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  
+  .instruction-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  .instruction-item input[type="checkbox"] {
+    margin-right: 10px;
+    height: 20px; /* Increased height */
+    width: 20px;  /* Increased width */
+    font-size: 20px; /* Increased font size */
+    flex-shrink: 0; /* Prevent shrinking */
+    flex-grow: 0; /* Prevent growing */
+  }
+  
+  .start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Light green initially */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .start-button.disabled {
+    background-color: #ccc; /* Light gray when disabled */
+    cursor: not-allowed;
+  }
+  
+  .start-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Only change the button to dark green when all instructions are checked */
+  .start-button.active {
+    background-color: #2d6a35; /* Dark green when active */
+  }
+  

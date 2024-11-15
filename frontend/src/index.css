@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+
+/* Apply the font to all elements on the page */
+* {
+  margin: 0;
+  font-family: "Faculty Glyphic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optional: Apply font to code elements */
+code {
+  font-family: "Faculty Glyphic", sans-serif;
+}

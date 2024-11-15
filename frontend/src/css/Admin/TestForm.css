@@ -1,0 +1,191 @@
+/* Container for Add Questions Page */
+.main-content {
+  min-height: 100vh; /* Ensure the page height adjusts based on content */
+  padding: 20px; /* Add some padding around the content */
+}
+
+.add-questions {
+  background-color: #e6ebf0; /* Light transparent background */
+  min-height: 100vh; /* Ensure it takes full height */
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%; /* Full width */
+}
+
+.error-message-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8d7da;
+  padding: 15px;
+  border-radius: 5px;
+  color: #721c24;
+  z-index: 1000; /* Ensure it stays on top */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+.ok-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.ok-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  font-size: 14px;
+  list-style-type: none;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+form input,
+form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Heading */
+.add-questions h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+/* Input Fields */
+.add-questions label {
+  font-weight: bold; /* Make labels stand out */
+}
+
+h2, h3, h4 {
+  margin-bottom: 10px; /* Adjust the spacing as needed */
+}
+
+textarea[name="description"] {
+  height: 150px; /* Adjust this value to your preference */
+  width: 100%; /* Optional: ensure it spans the container */
+  padding: 10px;
+  margin-bottom: 20px; /* Add some gap */
+}
+
+.add-questions input,
+.add-questions textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 10px 15px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+ 
+}
+
+.add-questions .description-textarea {
+  height: 200px; /* Adjust as needed */
+  resize: vertical;
+  width: 100%; 
+}
+
+.add-questions .sampleTestCase-textarea {
+  height: 120px; /* Adjust as needed */
+  resize: vertical;
+  width: 100%; 
+}
+
+
+
+/* Adjust the styles for questions and test cases */
+.question,
+.test-case {
+  margin: 15px 0;
+  border: 1px solid #ecf0f1;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: rgba(245, 245, 245, 0.8); /* Transparent background */
+}
+
+/* Button Styles */
+button[type="submit"] {
+  width: 450px; /* Reduce the width of the submit button */
+  height: 40px; /* Set a height for the button */
+  margin-top: 20px; /* Add some space above the button */
+  justify-content: center;
+}
+
+.submit {
+  display: block;
+  width:100px;
+  padding: 10px 0;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s;
+
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .submit-button {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .add-questions {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .error-message-container {
+    width: 90%;
+    max-width: 350px;
+  }
+}

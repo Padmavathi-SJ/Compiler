@@ -1,0 +1,75 @@
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e6ebf0;
+}
+
+.dashboard-content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: var(--sidebar-width);
+}
+
+.userName {
+  font-size: 24px;
+}
+
+.rollNo {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.dashboard-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: 13%;
+  width: 80%;
+}
+
+.dashboard-box {
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.dashboard-box:last-child {
+  margin-right: 0;
+}
+
+.dashboard-box h3 {
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.test-count {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    margin-left: var(--sidebar-min-width);
+  }
+
+  .dashboard-boxes {
+    flex-direction: column;
+  }
+
+  .dashboard-box {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+}

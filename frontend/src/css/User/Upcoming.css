@@ -1,0 +1,47 @@
+
+  .upcoming-tests-page {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - var(--sidebar-width)); /* Remaining width after sidebar */
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+    background-color: #e6ebf0;
+    min-height: 100vh; /* Ensure it takes full height */
+  }
+  
+  h2 {
+    margin: 20px 0; /* Margin for header */
+  }
+  
+  .tests-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between grid items */
+  }
+  
+  .test-box {
+    background-color: #fff; /* Background for each test box */
+    border: 1px solid #ccc; /* Border for test boxes */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.2s; /* Smooth scaling effect */
+  }
+  
+  .test-box:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .upcoming-tests-page {
+      padding: 10px; /* Less padding on smaller screens */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .upcoming-tests-page {
+      padding: 5px; /* Even less padding for very small screens */
+    }
+  }
+  

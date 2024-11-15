@@ -1,0 +1,270 @@
+/* General Container Styles */
+.container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #eaeef1;
+    overflow: hidden;
+  }
+  
+  /* Left Half - Problem Details */
+  .left-half {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  border-right: 2px solid #ddd;
+  max-height: 100vh;
+  overflow-y: auto; 
+  }
+
+  .left-half::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+  .left-half::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+  }
+  
+  .left-half::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 10px; /* Roundness of the scrollbar track */
+  }
+  
+  /* Right Half - Code Editor */
+  .right-half {
+    width: 50%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    max-height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+  justify-content: space-between;
+  }
+  
+  /* Title and Section Headings */
+  h2, h3 {
+    color: #2c3e50;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  
+  .left-half table {
+    width: 80%;
+    align-items: center;
+  }
+
+  .test-case-table {
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure the rounded corners are visible */
+  }
+  
+  /* Test Case Table */
+.test-case-table th,
+.test-case-table td {
+  padding: 10px;
+  border: 1.2px solid #146bc9;
+  border-radius: 10px;
+}
+
+.test-case-table th{
+  background-color: transparent;
+  color: #2c3e50;
+}
+
+.test-case-table .test-case-name {
+  text-align: left;
+}
+
+.test-case-table .test-case-status {
+  text-align: center;
+}
+  
+  /* Test Case Status Colors */
+  .passed {
+    color: #28a745; /* Green for passed */
+  }
+  
+  .not-passed {
+    color: #dc3545; /* Red for not passed */
+  }
+  
+  .test-case-button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Ensure buttons have consistent styling on hover */
+  .test-case-button:hover {
+    border-color: #146bc9;
+  }
+  
+  /* Ensure consistent styling on focus */
+  .test-case-button:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.25);
+  }
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .top-bar-left {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .top-bar-right {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .file-name-input,
+  .language-dropdown,
+  .run-button,
+  .submit-button,
+  .finish-button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  .language-dropdown {
+    height: 40px;
+  }
+
+  .file-name-input{
+    height: 40px;
+  }
+.file-name-input:focus,
+.language-dropdown:focus,
+.run-button:focus,
+.submit-button:focus,
+.finish-button:focus {
+  border-color: #146bc9;
+}
+
+.test-case-button {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.test-case-status.passed {
+  background-color: darkgreen;
+  color: white;
+}
+
+.test-case-status.failed {
+  background-color: red;
+  color: white;
+}
+
+.CodeMirror {
+  background-color: #000;
+  color: white; /* Ensures the text is white */
+  font-family: monospace;
+}
+
+
+.CodeMirror-lines {
+  background-color: #000;
+  font-size: 18px;
+}
+
+/* Ensuring the editor scrollbars and gutters remain styled correctly */
+.CodeMirror-gutters {
+  background-color: #000;
+}
+
+/* Optional: Style cursor to make it more visible on black background */
+.CodeMirror-cursor {
+  border-left: 1px solid white;
+}
+
+
+  .input-output-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-output-container h3 {
+    margin: 0;
+  }
+  
+  .input-area {
+    width: 98%;
+    height: 100px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    overflow: auto;
+    margin-top: 0;
+  }
+  
+  .output-area {
+    width: 98%;
+    height: 100px;
+    background-color: #eaeef1;
+    font-size: 14px;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .finish-button {
+    margin-top: 20px;
+    align-self: flex-end;
+    width: 100px;
+  }
+  
+  .run-button,
+  .submit-button,
+  .finish-button {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+  }
+  
+  .run-button:hover,
+  .submit-button:hover,
+  .finish-button:hover {
+    background-color: #146bc9;
+    border-color: #0056b3;
+  }
+  
+  .run-button:focus,
+  .submit-button:focus,
+  .finish-button:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 0 3px rgba(92, 163, 238, 0.25);
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    
+    .left-half, .right-half {
+      width: 100%;
+      padding: 10px;
+    }
+  }

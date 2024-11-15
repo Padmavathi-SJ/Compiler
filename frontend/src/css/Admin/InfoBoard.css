@@ -1,0 +1,91 @@
+/* Styles for InfoBoard component */
+.info-board {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #e6ebf0;
+}
+
+/* Ensure AdminSidebar width is applied dynamically without gap */
+.admin-sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0; /* Prevents shrinking the sidebar */
+}
+
+/* Content section adjusted to align exactly after the sidebar */
+.content {
+    flex-grow: 1; /* Takes the remaining width */
+    padding: 20px;
+    margin-left: 0; /* No additional margin since flex handles alignment */
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 0.2px solid #2c3e50;
+    border-radius: 5px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 0.2px solid #698097; 
+    align-items: center;
+    border-radius: 4px;
+}
+
+.table th {
+    background-color: #d2e5f8;
+}
+
+.table td {
+    font-weight: 500;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .info-board {
+        flex-direction: column; /* Stack the sidebar and content vertically on smaller screens */
+    }
+
+    .admin-sidebar {
+        width: var(--sidebar-min-width); /* Adjust sidebar for smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
+
+

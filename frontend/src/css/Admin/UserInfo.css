@@ -1,0 +1,78 @@
+/* Main Content Styling */
+.main-content {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* User Info Container Styling */
+.user-info-content {
+    background-color: rgba(230, 235, 240, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+/* User Info Header */
+.user-info-content h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* User Info Details Styling */
+.user-info-content p {
+    color: #34495e;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 16px 0;
+}
+
+/* Test Stats Container */
+.test-stats-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.test-stats-container h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* Test Boxes */
+.test-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.test-box {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    transition: background-color 0.3s ease;
+}
+
+.test-box:hover {
+    background-color: #f2f4f6;
+}
+
+.test-box p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #34495e;
+}

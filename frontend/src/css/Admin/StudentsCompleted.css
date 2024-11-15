@@ -1,0 +1,71 @@
+/* Align .completed-students-content from the top of the page */
+.completed-students-content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - var(--sidebar-width)); /* Remaining width after sidebar */
+  margin-left: var(--sidebar-width);
+  padding: 20px;
+  background-color: #e6ebf0;
+  min-height: 100vh; /* Ensure it takes full height */
+}
+
+/* Heading styles */
+.completed-students-content h2 {
+  margin-bottom: 20px; /* Space below the heading */
+  font-size: 1.6rem;
+  color: #2c3e50;
+}
+
+/* Table styles */
+.completed-students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.completed-students-table th,
+.completed-students-table td {
+  border: 1px solid #698097;
+  padding: 10px;
+  text-align: left;
+}
+
+.completed-students-table th {
+  background-color: #d2e5f8;
+  color: #2c3e50;
+}
+
+.completed-students-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+/* Button styles */
+.view-code-btn {
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-code-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .completed-students-content {
+      margin-left: 0;
+      width: 100%; /* Ensure full width on mobile */
+      padding: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .completed-students-content {
+      padding: 10px; /* Reduced padding for smaller screens */
+  }
+}

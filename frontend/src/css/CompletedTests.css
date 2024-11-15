@@ -1,0 +1,68 @@
+.main-content {
+    min-height: 100vh; /* Ensure the page height adjusts based on content */
+    padding: 20px; /* Add some padding around the content */
+  }
+  
+.completed-tests-content {
+    background-color: #e6ebf0; /* Light transparent background */
+    min-height: 100vh; /* Ensure it takes full height */
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; /* Full width */
+  }
+  
+  .completed-tests-content h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 1.4rem;
+  }
+  .completed-tests-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .completed-tests-table th,
+  .completed-tests-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #698097;;
+  }
+  
+  .completed-tests-table th {
+    background-color: #d2e5f8;
+    color: #2c3e50;
+  }
+  
+  .completed-tests-table td {
+    color: #2c3e50;
+  }
+  
+  .view-code-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-code-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 768px) {
+    .completed-tests-content {
+      padding: 10px;
+    }
+  
+    .completed-tests-table th, .completed-tests-table td {
+      padding: 8px;
+    }
+  
+    .view-code-btn {
+      padding: 6px 12px;
+    }
+  }
+  

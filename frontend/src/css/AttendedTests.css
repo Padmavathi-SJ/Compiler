@@ -1,0 +1,81 @@
+.main-content {
+    min-height: 100vh; /* Ensure the page height adjusts based on content */
+    padding: 20px; /* Add some padding around the content */
+  }
+
+.attended-tests-content {
+    background-color: #e6ebf0; /* Light transparent background */
+    min-height: 100vh; /* Ensure it takes full height */
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; /* Full width */
+}
+  
+  .attended-tests-content h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 1.4rem;
+  }
+  
+  /* Attended Tests Table */
+  .attended-tests-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .attended-tests-table th,
+  .attended-tests-table td {
+    border: 1px solid #698097;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .attended-tests-table th {
+    background-color: #d2e5f8;
+    color: #2c3e50;
+  }
+  
+  .attended-tests-table td {
+    background-color: #f7f9fc;
+    align-items: center;
+  }
+  
+  .view-code-btn, .edit-status-btn, .save-status-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+  }
+  
+  .view-code-btn:hover, .edit-status-btn:hover, .save-status-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Status Dropdown */
+  .status-dropdown {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .attended-tests-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      height: auto;
+      min-width: 0;
+    }
+  
+    .attended-tests-content {
+      margin-left: 0;
+    }
+  }
+  

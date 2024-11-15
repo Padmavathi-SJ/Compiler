@@ -1,0 +1,93 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure html and body take full height */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Container styles */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #e6ebf0; /* Light gray background color */
+    margin: 0;
+    padding: 0;
+}
+
+.login-card {
+    width: 100%;
+    max-height: 28rem; /* Sets a maximum height */
+    max-width: 28rem; /* Adjust as needed */
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(54, 51, 51, 0.2);
+    text-align: center;
+    overflow-y: auto;
+}
+
+.logo-heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.main-logo {
+    width: 2.7rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.heading {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 1.5rem;
+    font-weight:600;
+    color: #2d3748;
+}
+
+.h2-text {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #2d3748;
+    margin-bottom: 3rem;
+}
+
+.sign-in-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #e6f0f3;
+    color: black;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign-in-button:hover {
+    background-color: #d4e6f1;
+}
+
+.additional-text {
+    font-size: 1rem;
+    color: #718096;
+    margin-top: 1.5rem; /* Add top margin to create space between the button and the text */
+}
+
+.google-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+}

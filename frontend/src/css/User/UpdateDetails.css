@@ -1,0 +1,63 @@
+.main-content {
+    min-height: 100vh; /* Ensure the page height adjusts based on content */
+    padding: 20px; /* Add some padding around the content */
+  }
+
+  .update-details-content {
+    background-color: #e6ebf0; /* Light transparent background */
+    min-height: 100vh; /* Ensure it takes full height */
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%; /* Full width */
+  }
+  
+  .update-details-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .update-details-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .update-details-content form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .update-details-content form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .update-details-content form input,
+  .update-details-content form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .update-details-content form button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-details-content form button:hover {
+    background-color: #2980b9;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  .success {
+    color: green;
+  }
+  

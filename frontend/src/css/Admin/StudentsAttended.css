@@ -1,0 +1,71 @@
+.students-attended-content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - var(--sidebar-width)); /* Remaining width after sidebar */
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+    background-color: #e6ebf0;
+    min-height: 100vh; /* Ensure it takes full height */
+  }
+  
+  .students-attended-content h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Heading font size */
+    color: #2c3e50; /* Heading color */
+  }
+  
+  .students-table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse borders */
+    margin-top: 20px; /* Space above the table */
+    border-radius: 4px;
+  }
+  
+  .students-table th,
+  .students-table td {
+    border: 0.2px solid #698097; /* Light border for cells */
+    padding: 10px; /* Padding for cells */
+    text-align: left; /* Left align text */
+  }
+  
+  .students-table th {
+ /* Header background color */
+    color: #2c3e50; /* Header text color */
+    background-color: #f2f2f2;
+   
+  }
+  
+ 
+  
+
+  
+  button {
+    padding: 8px 15px; /* Padding for buttons */
+    background-color: #3498db; /* Button background color */
+    color: #ffffff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  button:hover {
+    background-color: #2980b9; /* Darker color on hover */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .students-attended-container {
+      flex-direction: column; /* Stack sidebar and content vertically */
+    }
+  
+    .students-attended-content {
+      margin-left: 0; /* Remove margin for mobile */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .students-attended-content {
+      width: 100%; /* Full width on mobile */
+    }
+  }
+  

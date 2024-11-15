@@ -1,0 +1,95 @@
+/* Main content container */
+.main-content {
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #e6ebf0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* View Code container */
+.view-code-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e6ebf0;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Align the heading to the top left */
+.heading {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin: 0 0 20px 0; /* Align heading to the top left */
+  align-self: flex-start;
+}
+
+/* Wrapper to align details and code container as columns */
+.details-code-wrapper {
+  display: flex;
+  gap: 20px; /* Space between the details and code */
+  width: 100%;
+  flex: 1; /* Allow space to grow/shrink */
+}
+
+/* User Details Container with transparent background, size dynamically based on content */
+.details-container {
+  background-color: rgba(255, 255, 255, 0.6); /* Adjust opacity for transparency */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 0 1 auto; /* Shrink and grow based on content */
+  min-width: 200px; /* Minimum width to avoid too small size */
+  max-width: 30%; /* Limit the width to 30% */
+}
+
+.details-container h3,
+.details-container p {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+/* Code container with scroll, occupying 75% of the page width and height */
+.code-container {
+  background-color: rgba(44, 62, 80, 0.9);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  overflow-y: auto;
+  flex: 1 1 75%; /* Grow and shrink to 75% of the available space */
+  max-height: 100%; /* Full height available */
+  width: 75%; /* Occupy 75% width of the page */
+}
+
+.code-box {
+  color: #ecf0f1;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  padding: 10px;
+  overflow-y: scroll; /* Ensure scrollbar appears inside */
+  max-height: 100%; /* Fill the container height */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .details-code-wrapper {
+    flex-direction: column;
+  }
+  .code-container {
+    width: 100%; /* Take full width on smaller screens */
+    max-height: 400px; /* Limit height on smaller screens */
+  }
+  .details-container {
+    width: 100%; /* Take full width on smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .main-content {
+    padding: 10px;
+  }
+}
